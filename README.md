@@ -1,5 +1,1 @@
-# Sean Cha
-
-## HI 1
-
-### HI 2
+this is the readme.md
