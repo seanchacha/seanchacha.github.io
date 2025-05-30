@@ -1,2 +1,5 @@
-# seanchacha.github.io
-my portfolio page
+# Sean Cha
+
+## HI 1
+
+### HI 2
