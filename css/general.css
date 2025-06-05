@@ -1,21 +1,33 @@
 p {
-  font-family: Helvetica;
+  font-family: "Inter", Helvetica;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 h1 {
-  font-family: Helvetica;
+  font-family: "Inter", Helvetica;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 22px;
+  font-size: 1.8rem;
+  font-weight: 450;
 }
 
 h2 {
-  font-family: Helvetica;
+  font-family: "Inter", Helvetica;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Inter", Helvetica;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 350;
 }
 
 body {
