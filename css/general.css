@@ -1,0 +1,23 @@
+p {
+  font-family: Helvetica;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: Helvetica;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+h2 {
+  font-family: Helvetica;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+}
