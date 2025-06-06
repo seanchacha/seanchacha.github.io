@@ -4,6 +4,10 @@
   flex-direction: row;
   background-color: rgb(66, 66, 66);
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 .header-left-section {
@@ -20,19 +24,24 @@
 }
 
 .header-right-section {
-  width: 25vw;
+  width: 6.5vw;
   display: flex;
   align-items: center;
-  margin-right: 50px;
+  color: rgb(238, 240, 230);
 }
 
 .hamburger-icon {
   height: 25px;
   margin-left: auto;
-  color: rgb(238, 240, 230);
 }
 
-.header-title {
+.linkedin-icon {
+  height: 25px;
+  margin-left: auto;
+}
+
+.header-title-link {
+  text-decoration: none;
   color: rgb(238, 240, 230);
 }
 
@@ -47,16 +56,18 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .overview {
   display: flex;
-  width: 70vw;
-  aspect-ratio: 16/9;
+  width: 80vw;
+  aspect-ratio: 16/7;
   flex-direction: row;
   align-items: start;
-  max-width: 1000px;
-  margin-top: 50px;
+  max-width: 1400px;
+  margin-top: 130px;
   margin-bottom: 50px;
 
   background-image: url("../assets/images/overview.JPG");
@@ -84,7 +95,7 @@
   font-weight: bold;
   text-align: center;
 
-  margin-left: 75px;
+  margin-left: 65px;
 }
 
 .overview-body {
@@ -94,11 +105,115 @@
   text-align: left;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  margin-left: 60px;
+  margin-left: 50px;
   height: 30vh;
-  margin-top: 10px;
+  /* max-height: 270px; */
+  margin-top: 30px;
   width: 200px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 10px;
+  padding: 30px 20px 10px 30px;
+}
+
+.below-overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70vw;
+}
+
+.below-overview-left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.below-overview-right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.spacing-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+}
+
+.large-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.large-section-left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  width: 30vw;
+  max-width: 500px;
+}
+
+.large-section-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  max-width: 500px;
+}
+
+.large-section-logo {
+  display: flex;
+}
+
+.large-section-text-body {
+  margin-top: 30px;
+}
+@media (max-width: 700px) {
+  .large-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .large-section-left,
+  .large-section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    max-width: 500px;
+  }
+}
+
+.soe-logo {
+  width: 140px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.nventric-logo {
+  width: 170px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.large-section-image-1 {
+  margin-top: 20px;
+  width: 60vw;
+  max-width: 450px;
+  border-radius: 20px;
 }

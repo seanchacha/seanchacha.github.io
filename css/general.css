@@ -4,6 +4,7 @@ p {
   margin-bottom: 0;
   font-weight: 300;
   font-size: 1rem;
+  letter-spacing: 0.04em;
 }
 
 h1 {
@@ -32,4 +33,9 @@ h3 {
 
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: underline; /* Removes the underline */
+  color: inherit; /* Makes the link text inherit the color of its parent */
 }
