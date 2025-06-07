@@ -7,14 +7,6 @@ p {
   letter-spacing: 0.04em;
 }
 
-ul,
-li {
-  font-family: "Inter", Helvetica !important;
-  font-weight: 300;
-  font-size: 1rem;
-  letter-spacing: 0.04em;
-}
-
 h1 {
   font-family: "Inter", Helvetica;
   margin-top: 0;
