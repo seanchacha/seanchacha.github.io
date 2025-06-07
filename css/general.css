@@ -7,17 +7,9 @@ p {
   letter-spacing: 0.04em;
 }
 
+ul,
 li {
-  font-family: "Inter", Helvetica;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 300;
-  font-size: 1rem;
-  letter-spacing: 0.04em;
-}
-
-ul {
-  font-family: "Inter", Helvetica;
+  font-family: "Inter", Helvetica !important;
   font-weight: 300;
   font-size: 1rem;
   letter-spacing: 0.04em;
