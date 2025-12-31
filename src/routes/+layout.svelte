@@ -7,5 +7,11 @@
 </script>
 
 <ModeWatcher />
+
+<!-- favicon preview (decorative) -->
+<div class="favicon-container" aria-hidden="true">
+  <img src={favicon} alt="favicon preview" class="favicon-image" />
+</div>
+
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 {@render children()}
