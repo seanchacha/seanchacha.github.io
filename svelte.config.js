@@ -17,8 +17,10 @@ const config = {
 		adapter: adapter({
 			fallback: '404.html'
 		}),
-		paths: {
-			base: ''
+		alias: {
+			$lib: 'src/lib',
+			$components: 'src/components',
+			$routes: 'src/routes'
 		}
 	},
 
