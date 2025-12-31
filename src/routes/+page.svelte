@@ -6,7 +6,7 @@
   import { Button } from "$lib/components/ui/button/index.js";
 </script>
 
-<h1>UNDER CONSTRUCTION! MIGRATING TO SVELTE SITE, IN PROGRESS 21!</h1>
+<h1>UNDER CONSTRUCTION! MIGRATING TO SVELTE SITE, IN PROGRESS!</h1>
 
 <Button onclick={toggleMode} variant="outline" size="icon">
   <SunIcon
