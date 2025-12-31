@@ -7,8 +7,6 @@
 </script>
 
 <h1>UNDER CONSTRUCTION! MIGRATING TO SVELTE SITE, IN PROGRESS 21!</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-<Button>Click me</Button>
 
 <Button onclick={toggleMode} variant="outline" size="icon">
   <SunIcon
