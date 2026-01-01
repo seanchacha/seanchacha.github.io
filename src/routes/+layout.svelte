@@ -16,7 +16,7 @@
 
 <ModeWatcher />
 
-<div class="flex items-center px-4 py-2">
+<div class="flex items-center px-4 py-2 sticky top-0 z-50 bg-background">
 	<!-- favicon preview (decorative) -->
 	<a href="/" class="favicon-container pl-2 pr-4" aria-label="Home">
 		<img src={favicon} alt="Home — sean cha" class="h-8 w-8 object-contain" />
