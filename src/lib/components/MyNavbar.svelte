@@ -14,36 +14,36 @@
  const components: { title: string; href: string; description: string }[] = [
   {
    title: "Alert Dialog",
-   href: "/docs/components/alert-dialog",
+   href: "/",
    description:
     "A modal dialog that interrupts the user with important content and expects a response."
   },
   {
    title: "Hover Card",
-   href: "/docs/components/hover-card",
+   href: "/",
    description:
     "For sighted users to preview content available behind a link."
   },
   {
    title: "Progress",
-   href: "/docs/components/progress",
+   href: "/",
    description:
     "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar."
   },
   {
    title: "Scroll-area",
-   href: "/docs/components/scroll-area",
+   href: "/",
    description: "Visually or semantically separates content."
   },
   {
    title: "Tabs",
-   href: "/docs/components/tabs",
+   href: "/",
    description:
     "A set of layered sections of content—known as tab panels—that are displayed one at a time."
   },
   {
    title: "Tooltip",
-   href: "/docs/components/tooltip",
+   href: "/",
    description:
     "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it."
   }
@@ -107,18 +107,18 @@
       </NavigationMenu.Link>
      </li>
      {@render ListItem({
-      href: "/docs",
+      href: "/",
       title: "Introduction",
       content:
        "Re-usable components built using Bits UI and Tailwind CSS."
      })}
      {@render ListItem({
-      href: "/docs/installation",
+      href: "/",
       title: "Installation",
       content: "How to install dependencies and structure your app."
      })}
      {@render ListItem({
-      href: "/docs/components/typography",
+      href: "/",
       title: "Typography",
       content: "Styles for headings, paragraphs, lists...etc"
      })}
@@ -145,7 +145,7 @@
   <NavigationMenu.Item>
    <NavigationMenu.Link>
     {#snippet child()}
-     <a href="/docs" class={navigationMenuTriggerStyle()}>Docs</a>
+     <a href="/" class={navigationMenuTriggerStyle()}>Docs</a>
     {/snippet}
    </NavigationMenu.Link>
   </NavigationMenu.Item>
