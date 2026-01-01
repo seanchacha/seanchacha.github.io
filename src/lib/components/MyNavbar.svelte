@@ -6,12 +6,6 @@
  import { IsMobile } from "$lib/hooks/is-mobile.svelte.js";
  
  const isMobile = new IsMobile();
- 
- type ListItemProps = HTMLAttributes<HTMLAnchorElement> & {
-  title: string;
-  href: string;
-  content: string;
- };
 </script>
  
 <NavigationMenu.Root viewport={isMobile.current}>
