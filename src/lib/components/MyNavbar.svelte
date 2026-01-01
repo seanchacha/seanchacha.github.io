@@ -22,9 +22,9 @@
    <NavigationMenu.Content>
     <ul class="grid w-[200px] gap-4 p-2">
      <li>
+      <NavigationMenu.Link href="/">All</NavigationMenu.Link>
       <NavigationMenu.Link href="/">Post 1</NavigationMenu.Link>
       <NavigationMenu.Link href="/">Post 2</NavigationMenu.Link>
-      <NavigationMenu.Link href="/">Post 3</NavigationMenu.Link>
      </li>
     </ul>
    </NavigationMenu.Content>

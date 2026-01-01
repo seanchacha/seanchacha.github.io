@@ -1,36 +1,9 @@
 <script lang="ts">
   import { IsMobile } from '$lib/hooks/is-mobile.svelte.ts';
-	import { typewriter, messages } from '$lib/components/home_msgs.ts';
 
   const isMobile = new IsMobile();
   const desktopWidth: number = 65;
   const mobileWidth: number = 97;
-	let i = $state(-1);
-
-	$effect(() => {
-		let isFirst = true;
-		let interval = setInterval(() => {
-			i += 1;
-			i %= messages.length;
-			
-			if (isFirst) {
-				isFirst = false;
-				clearInterval(interval);
-				setTimeout(() => {
-					let newInterval = setInterval(() => {
-						i += 1;
-						i %= messages.length;
-					}, 3000);
-					// Store for cleanup
-					interval = newInterval;
-				}, 500);
-			}
-		}, 500);
-
-		return () => {
-			clearInterval(interval);
-		};
-	});
 </script>
 
 <div
@@ -42,5 +15,7 @@
     <br />
     Contact Page
   </h1>
+  <div class="min-h-[3em]">
+  </div>
 
 </div>
