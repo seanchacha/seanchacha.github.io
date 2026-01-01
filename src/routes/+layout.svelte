@@ -18,12 +18,10 @@
 
 <div class="flex items-center px-4 py-2">
 	<!-- favicon preview (decorative) -->
-	<div class="favicon-container pl-2 pr-4" aria-hidden="true">
-	<img 
-		src={favicon}
-		alt="favicon"
-		class="h-8 w-8 object-contain" />
-	</div>
+	<a href="/" class="favicon-container pl-2 pr-4" aria-label="Home">
+		<img src={favicon} alt="Home — sean cha" class="h-8 w-8 object-contain" />
+	</a>
+
 
 	<MyNavbar />
 
