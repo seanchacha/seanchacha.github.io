@@ -3,6 +3,8 @@
 	import favicon from '$lib/assets/favicon.svg';
   	import { ModeWatcher } from "mode-watcher";
 
+	import MyNavbar from '$lib/components/MyNavbar.svelte';
+
 	let { children } = $props();
 </script>
 
@@ -14,4 +16,7 @@
 </div>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
+
+<MyNavbar />
+
 {@render children()}
