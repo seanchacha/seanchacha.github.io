@@ -42,7 +42,7 @@
     <br />
     Hi, I'm Sean
   </h1>
-  <div class="min-h-[1.5em]">
+  <div class="min-h-[3em]">
     {#key i}
       <p in:typewriter={{ speed: 5 }}>
         {messages[i] || ''}
