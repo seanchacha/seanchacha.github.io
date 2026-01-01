@@ -13,7 +13,7 @@
   <NavigationMenu.Item>
    <NavigationMenu.Link>
     {#snippet child()}
-     <a href="/" class={navigationMenuTriggerStyle()}>Contact</a>
+     <a href="/contact" class={navigationMenuTriggerStyle()}>Contact</a>
     {/snippet}
    </NavigationMenu.Link>
   </NavigationMenu.Item>
@@ -22,9 +22,9 @@
    <NavigationMenu.Content>
     <ul class="grid w-[200px] gap-4 p-2">
      <li>
-      <NavigationMenu.Link href="##">Post 1</NavigationMenu.Link>
-      <NavigationMenu.Link href="##">Post 2</NavigationMenu.Link>
-      <NavigationMenu.Link href="##">Post 3</NavigationMenu.Link>
+      <NavigationMenu.Link href="/">Post 1</NavigationMenu.Link>
+      <NavigationMenu.Link href="/">Post 2</NavigationMenu.Link>
+      <NavigationMenu.Link href="/">Post 3</NavigationMenu.Link>
      </li>
     </ul>
    </NavigationMenu.Content>
