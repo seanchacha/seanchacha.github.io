@@ -2,7 +2,9 @@
 export const messages: string[] = [
     "Test Software Engineer @ Impulse Space",
     "Prev @ Venhub, Lead Robotics Software Engineer",
-    "Hobbyist Videographer"
+    "Prev @ Second Order Effects, MechE Intern",
+    "Prev @ Nventric, Medical Device R&D Intern",
+    "Videographer, sometimes"
 ];
 
 export function typewriter(

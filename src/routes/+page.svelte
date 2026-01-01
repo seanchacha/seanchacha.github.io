@@ -3,6 +3,8 @@
 	import { typewriter, messages } from '$lib/components/home_msgs.ts';
 
   const isMobile = new IsMobile();
+  const desktopWidth: number = 65;
+  const mobileWidth: number = 97;
 	let i = $state(-1);
 
 	$effect(() => {
@@ -33,7 +35,7 @@
 
 <div
   class="flex flex-col items-start justify-center min-h-180 px-5 mx-auto"
-  style="max-width: {isMobile.current ? '97%' : '75%'};"
+  style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
   <h1 class="text-2xl font-normal tracking-tight text-left">
     [PAGE UNDER CONSTRUCTION]
@@ -51,7 +53,7 @@
 
 <div
   class="flex flex-col items-start justify-center min-h-screen px-5 py-120 mx-auto"
-  style="max-width: {isMobile.current ? '97%' : '75%'};"
+  style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
   <h3 class="scroll-m-20 text-2xl tracking-tight text-left">I SAID IM WORKING ON IT!</h3>
 </div>
