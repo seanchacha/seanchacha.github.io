@@ -20,12 +20,12 @@
 					let newInterval = setInterval(() => {
 						i += 1;
 						i %= messages.length;
-					}, 3000);
+					}, 2800);
 					// Store for cleanup
 					interval = newInterval;
-				}, 500);
+				}, 300);
 			}
-		}, 500);
+		}, 300);
 
 		return () => {
 			clearInterval(interval);
@@ -37,9 +37,10 @@
   class="flex flex-col items-start justify-center min-h-180 px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
-  <h1 class="text-2xl font-normal tracking-tight text-left">
+  <h1 class="text-l font-normal tracking-tight text-left">
     [PAGE UNDER CONSTRUCTION]
-    <br />
+  </h1>
+  <h1 class="text-2xl font-normal tracking-tight text-left">
     Hi, I'm Sean
   </h1>
   <div class="min-h-[3em]">

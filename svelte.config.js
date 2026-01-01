@@ -1,10 +1,18 @@
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { fileURLToPath } from 'url';
+import { resolve, dirname } from 'path';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-	extensions: ['.md'],
+	extensions: ['.md', '.svx'],
+	// Optional: customize mdsvex options
+	layout: {
+		blog: resolve(__dirname, 'src/lib/layouts/blog.svelte')
+	}
 }
 
 /** @type {import('@sveltejs/kit').Config} */

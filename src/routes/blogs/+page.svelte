@@ -14,7 +14,7 @@
     [PAGE UNDER CONSTRUCTION]
   </h1>
   <h1 class="text-2xl font-normal tracking-tight text-left">
-    Contact Page
+    All Posts Page
   </h1>
   <div class="min-h-[3em]">
   </div>

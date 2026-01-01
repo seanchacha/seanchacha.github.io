@@ -18,13 +18,13 @@
    </NavigationMenu.Link>
   </NavigationMenu.Item>
   <NavigationMenu.Item>
-   <NavigationMenu.Trigger>Posts</NavigationMenu.Trigger>
+   <NavigationMenu.Trigger>Blogs</NavigationMenu.Trigger>
    <NavigationMenu.Content>
     <ul class="grid w-[200px] gap-4 p-2">
      <li>
-      <NavigationMenu.Link href="/">All</NavigationMenu.Link>
-      <NavigationMenu.Link href="/">Post 1</NavigationMenu.Link>
-      <NavigationMenu.Link href="/">Post 2</NavigationMenu.Link>
+      <NavigationMenu.Link href="/blogs/">All</NavigationMenu.Link>
+      <NavigationMenu.Link href="/blogs/first-post">Post 1</NavigationMenu.Link>
+      <NavigationMenu.Link href="/blogs/second-post">Post 2</NavigationMenu.Link>
      </li>
     </ul>
    </NavigationMenu.Content>
