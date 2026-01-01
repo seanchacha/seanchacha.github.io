@@ -1,6 +1,5 @@
 <script lang="ts">
  import * as NavigationMenu from "$lib/components/ui/navigation-menu/index.ts";
- import { cn } from "$lib/utils.js";
  import { navigationMenuTriggerStyle } from "$lib/components/ui/navigation-menu/navigation-menu-trigger.svelte";
  import type { HTMLAttributes } from "svelte/elements";
  
@@ -24,7 +23,7 @@
     {/snippet}
    </NavigationMenu.Link>
   </NavigationMenu.Item>
-  <NavigationMenu.Item class="hidden md:block">
+  <NavigationMenu.Item>
    <NavigationMenu.Trigger>Posts</NavigationMenu.Trigger>
    <NavigationMenu.Content>
     <ul class="grid w-[200px] gap-4 p-2">
