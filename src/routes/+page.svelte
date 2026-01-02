@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { IsMobile } from '$lib/hooks/is-mobile.svelte.ts';
+  	import { IsMobile } from '$lib/hooks/is-mobile.svelte.ts';
 	import { typewriter, messages } from '$lib/components/home_msgs.ts';
 
-  const isMobile = new IsMobile();
-  const desktopWidth: number = 65;
-  const mobileWidth: number = 97;
+	const isMobile = new IsMobile();
+	const desktopWidth: number = 65;
+	const mobileWidth: number = 97;
 	let i = $state(-1);
 
 	$effect(() => {

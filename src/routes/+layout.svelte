@@ -11,6 +11,10 @@
 	import { toggleMode } from "mode-watcher";
 	import { Button } from "$lib/components/ui/button/index.js";
 
+  	import { IsMobile } from '$lib/hooks/is-mobile.svelte.ts';
+
+	const isMobile = new IsMobile();
+
 	let { children } = $props();
 </script>
 
@@ -25,7 +29,8 @@
 
 	<MyNavbar />
 
-	<div class="ml-auto pl-3 pr-4">
+	<!-- <div class="flex justify-center pl-3 pr-4"> -->
+	<div class="{isMobile.current ? 'ml-auto pr-3' : 'absolute left-1/2 -translate-x-1/2'}">
 		<Button onclick={toggleMode} variant="outline" size="icon">
 		<SunIcon
 			class="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 !transition-all dark:scale-0 dark:-rotate-90"
