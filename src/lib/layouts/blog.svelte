@@ -1,10 +1,20 @@
-<script>
-  export let title;
-  export let author;
-  export let date;
+<script lang="ts">
+  interface Props {
+    title: string;
+    date: string;
+    author?: string;
+    description?: string;
+  }
+
+  let { title, date, author, description }: Props = $props();
 </script>
 
 <article class="max-w-4xl mx-auto px-4 py-8 mt-8">
+  <div class="pb-4">
+    <a href="/blogs" class="hover:underline">
+      &lt; Go back to all posts
+    </a>
+  </div>
   <header class="mb-8">
     <h1 class="text-4xl font-bold mb-2">{title}</h1>
     <p class="text-gray-600">
@@ -13,6 +23,9 @@
         <span class="ml-4">by {author}</span>
       {/if}
     </p>
+  {#if description}
+  <p class="pt-10 pb-10">{description}</p>
+  {/if}
   </header>
 
   <div class="prose prose-lg max-w-none">
