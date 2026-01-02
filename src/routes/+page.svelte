@@ -34,7 +34,7 @@
 </script>
 
 <div
-  class="flex flex-col items-start justify-center min-h-180 px-5 mx-auto"
+  class="flex flex-col items-start justify-center {isMobile.current ? 'min-h-100' : 'min-h-180'} px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
   <h1 class="text-l font-normal tracking-tight text-left">
