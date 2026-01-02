@@ -1,7 +1,6 @@
 <script lang="ts">
  import * as NavigationMenu from "$lib/components/ui/navigation-menu/index.ts";
  import { navigationMenuTriggerStyle } from "$lib/components/ui/navigation-menu/navigation-menu-trigger.svelte";
- import type { HTMLAttributes } from "svelte/elements";
  
  import { IsMobile } from "$lib/hooks/is-mobile.svelte.js";
  
