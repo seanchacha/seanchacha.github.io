@@ -1,6 +1,7 @@
 <script lang="ts">
   import { IsMobile } from '$lib/hooks/is-mobile.svelte.ts';
   import svelteMachine from '$lib/assets/blogs/this-site/svelteMachine.png';
+  import dogs1 from '$lib/assets/dogs1.jpeg';
 
   const isMobile = new IsMobile();
   const desktopWidth: number = 65;
@@ -8,7 +9,7 @@
 
   const items = [
     { text: 'How I Built and Hosted this Site for Free', href: '/blogs/this-site', image: svelteMachine },
-    { text: 'My Other Post', href: '/blogs/life', image: '../src/lib/assets/dogs1.jpeg' },
+    { text: 'My Other Post', href: '/blogs/life', image: dogs1 },
   ];
 </script>
 
