@@ -99,7 +99,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="flex justify-center w-full {isMobile.current ? 'mb-35' : 'mb-20'} mt-auto">
+	<div class="flex justify-center w-full {isMobile.current ? 'mb-38' : 'mb-20'} mt-auto">
 		<svg 
 			class="w-12 h-12 animate-bounce cursor-pointer focus:outline-none" 
 			viewBox="0 0 24 24" 
