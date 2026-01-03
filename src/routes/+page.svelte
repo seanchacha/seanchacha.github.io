@@ -65,31 +65,31 @@
 						src="{selfie1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-1"
-						style="top: 12px; {isMobile.current ? "left: 0%;" : "left: 5%;"} animation-delay: 0s;"
+						style="top: 12px; {isMobile.current ? "left: 1%;" : "left: 5%;"} animation-delay: 0s;"
 					/>
 					<img 
 						src="{selfie1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-2"
-						style="{isMobile.current ? "top: 150px; left: 13%;" : "top: 125px; left: 25%;"} animation-delay: 0s;"
+						style="{isMobile.current ? "top: 150px; left: 10%;" : "top: 125px; left: 25%;"} animation-delay: 0s;"
 					/>
 					<img 
 						src="{selfie1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-3"
-						style="{isMobile.current ? "top: 1px; left: 35%;" : "top: 1px; left: 45%;"} animation-delay: 0s;"
+						style="{isMobile.current ? "top: 1px; left: 30%;" : "top: 1px; left: 45%;"} animation-delay: 0s;"
 					/>
 					<img 
 						src="{selfie1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-4"
-						style="{isMobile.current ? "top: 150px; left: 55%;" : "top: 130px; left: 65%;"} animation-delay: 0s;"
+						style="{isMobile.current ? "top: 150px; left: 50%;" : "top: 130px; left: 65%;"} animation-delay: 0s;"
 					/>
 					<img 
 						src="{selfie1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-5"
-						style="{isMobile.current ? "top: 15px; left: 70%;" : "top: 15px; left: 85%;"} animation-delay: 0s;"
+						style="{isMobile.current ? "top: 15px; left: 60%;" : "top: 15px; left: 85%;"} animation-delay: 0s;"
 					/>
 				</div>
 			</div>
