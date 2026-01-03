@@ -23,8 +23,8 @@
 
 <div class="flex items-center px-4 py-2 sticky top-0 z-50 bg-background">
 	<!-- favicon preview (decorative) -->
-	<a href="/" class="favicon-container pl-2 pr-4" aria-label="Home">
-		<img src={favicon} alt="Home — sean cha" class="h-8 w-8 object-contain" />
+	<a href="/" class="favicon-container pl-2 pr-4 group" aria-label="Home">
+		<img src={favicon} alt="Home — sean cha" class="h-8 w-8 object-contain favicon-wiggle" />
 	</a>
 
 
@@ -58,3 +58,25 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 {@render children()}
+
+<style>
+	@keyframes wiggle {
+		0%, 100% {
+			transform: rotate(0deg);
+		}
+		25% {
+			transform: rotate(-10deg);
+		}
+		75% {
+			transform: rotate(10deg);
+		}
+	}
+	
+	.favicon-wiggle {
+		transition: transform 0.3s ease-in-out;
+	}
+	
+	.group:hover .favicon-wiggle {
+		animation: wiggle 0.5s ease-in-out;
+	}
+</style>
