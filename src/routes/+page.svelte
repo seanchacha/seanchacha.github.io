@@ -63,7 +63,7 @@
 			</h1>
 		</div>
 	</div>
-	<div class="flex justify-center w-full {isMobile.current ? "mb-40" : "mb-20"} mt-auto">
+	<div class="flex justify-center w-full {isMobile.current ? 'mb-50' : 'mb-20'} mt-auto">
 		<svg 
 			class="w-12 h-12 animate-bounce cursor-pointer focus:outline-none" 
 			viewBox="0 0 24 24" 
@@ -83,7 +83,7 @@
 </div>
 
 <div
-  class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? "pt-5" : "pt-20"} px-5 mx-auto"
+  class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? '' : 'pt-20'} px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
 	<div class="flex flex-col items-center pt-2 pb-8">
