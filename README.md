@@ -4,7 +4,7 @@ Everything you need to build a Svelte project, powered by [`sv`](https://github.
 
 ## My notes
 
-using node version `11.6.2`  
+using node version `25.2.1`  
 
 
 ## Creating a project
