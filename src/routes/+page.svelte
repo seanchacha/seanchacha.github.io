@@ -88,7 +88,7 @@
 >
 	<div class="flex flex-col items-center pt-2 pb-8">
 		<h3 class="scroll-m-20 font-light text-xl tracking-tight text-center pb-4">Current Role</h3>
-		<p>
+		<p class="text-center">
 		Test Automation Software Engineer @
 		<a
 			href="https://www.impulsespace.com"
@@ -102,7 +102,7 @@
 	</div>
 	<div class="flex flex-col items-center pt-2 pb-8">
 		<h3 class="scroll-m-20 font-light text-xl tracking-tight text-center pb-4">Previous Roles</h3>
-		<p class="pb-2">
+		<p class="pb-2 text-center">
 		Lead Robotics Software Engineer @
 		<a
 			href="https://www.venhub.com"
@@ -113,7 +113,7 @@
 			Venhub Global
 		</a>
 		</p>
-		<p class="pb-2">
+		<p class="pb-2 text-center">
 		Medical Device R&D Intern @
 		<a
 			href="https://www.nventric.com"
@@ -124,7 +124,7 @@
 			Nventric
 		</a>
 		</p>
-		<p class="pb-2">
+		<p class="pb-2 text-center">
 		Mechanical Engineering Intern @
 		<a
 			href="https://www.soeffects.com"
