@@ -34,10 +34,10 @@
 </script>
 
 <div
-  class="flex flex-col items-start justify-start min-h-screen px-5 mx-auto"
+  class="flex {isMobile.current ? 'flex-col' : 'flex-row'} items-start justify-start min-h-screen px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
-  <div class="{isMobile.current ? "pt-30" : "pt-90"}">
+  <div class="{isMobile.current ? "pt-75" : "pt-90 min-w-100"}">
     <h1 class="text-2xl font-normal tracking-tight text-left">
       Hi, I'm Sean
     </h1>
@@ -48,6 +48,11 @@
         </p>
       {/key}
     </div>
+  </div>
+  <div class="{isMobile.current ? "pt-5" : "pt-65"}">
+    <h1 class="text-2xl font-normal tracking-tight text-left">
+      I be another div
+    </h1>
   </div>
 </div>
 
