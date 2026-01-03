@@ -34,10 +34,10 @@
 </script>
 
 <div
-  class="flex flex-col items-start justify-center {isMobile.current ? 'mt-10' : 'mt-20'} px-5 mx-auto"
+  class="flex flex-col items-start justify-start min-h-screen px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
-  <div class="{isMobile.current ? 'mt-30' : 'mt-50'}">
+  <div class="{isMobile.current ? "pt-30" : "pt-90"}">
     <h1 class="text-2xl font-normal tracking-tight text-left">
       Hi, I'm Sean
     </h1>
@@ -52,7 +52,7 @@
 </div>
 
 <div
-  class="flex flex-col items-center justify-center min-h-50 px-5 py-120 mx-auto"
+  class="flex flex-col items-center justify-center min-h-50 px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
   <div class="flex flex-col items-center pt-2 pb-8">
@@ -108,8 +108,8 @@
 </div>
 
 <div
-  class="flex flex-col items-start justify-center min-h-50 px-5 py-120 mx-auto"
+  class="flex flex-col items-start justify-center min-h-100 px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
-  <h3 class="scroll-m-20 text-2xl tracking-tight text-left">I'M WORKING ON IT!</h3>
+  <!-- <h3 class="scroll-m-20 text-2xl tracking-tight text-left">I'M WORKING ON IT!</h3> -->
 </div>
