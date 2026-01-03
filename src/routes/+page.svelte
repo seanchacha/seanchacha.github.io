@@ -1,6 +1,7 @@
 <script lang="ts">
   	import { IsMobile } from '$lib/hooks/is-mobile.svelte.ts';
 	import { typewriter, messages } from '$lib/components/home_msgs.ts';
+	import selfie1 from '$lib/assets/selfie1.jpg';
 
 	const isMobile = new IsMobile();
 	const desktopWidth: number = 65;
@@ -57,11 +58,40 @@
 				{/key}
 			</div>
 		</div>
-		<div class="flex-grow">
-			<div class="{isMobile.current ? "pt-5" : "pt-65"}">
-				<h1 class="text-2xl font-normal tracking-tight text-left">
-					I be another div
-				</h1>
+		<div class="flex-1 [@media(min-width:1500px)]:mx-[10%] [@media(min-width:2560px)]:mx-[15%]">
+			<div class="{isMobile.current ? 'pt-5' : 'pt-65'}">
+				<div class="relative w-full h-[400px] mt-8">
+					<img 
+						src="{selfie1}" 
+						alt="Description"
+						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-1"
+						style="top: 20px; {isMobile.current ? "left: 0%;" : "left: 5%;"} animation-delay: 0s;"
+					/>
+					<img 
+						src="{selfie1}" 
+						alt="Description"
+						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-2"
+						style="top: 125px; left: 25%; animation-delay: 0s;"
+					/>
+					<img 
+						src="{selfie1}" 
+						alt="Description"
+						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-3"
+						style="top: 10px; left: 45%; animation-delay: 0s;"
+					/>
+					<img 
+						src="{selfie1}" 
+						alt="Description"
+						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-4"
+						style="top: 130px; left: 65%; animation-delay: 0s;"
+					/>
+					<img 
+						src="{selfie1}" 
+						alt="Description"
+						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-5"
+						style="top: 15px; left: 85%; animation-delay: 0s;"
+					/>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -146,3 +176,34 @@
 >
   <!-- <h3 class="scroll-m-20 text-2xl tracking-tight text-left">I'M WORKING ON IT!</h3> -->
 </div>
+
+<style>
+	@keyframes float {
+		0%, 100% {
+			transform: translateY(0px);
+		}
+		50% {
+			transform: translateY(-5px);
+		}
+	}
+	
+	.animate-float-1 {
+		animation: float 3s ease-in-out infinite;
+	}
+	
+	.animate-float-2 {
+		animation: float 2.5s ease-in-out infinite 0.5s;
+	}
+	
+	.animate-float-3 {
+		animation: float 1.8s ease-in-out infinite 1s;
+	}
+	
+	.animate-float-4 {
+		animation: float 3.2s ease-in-out infinite 1.5s;
+	}
+	
+	.animate-float-5 {
+		animation: float 2.5s ease-in-out infinite 2s;
+	}
+</style>
