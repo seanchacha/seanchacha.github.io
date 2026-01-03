@@ -87,7 +87,7 @@
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
 	<div class="flex flex-col items-center pt-2 pb-8">
-		<h3 class="scroll-m-20 font-light text-xl tracking-tight text-left pb-4">Current Role</h3>
+		<h3 class="scroll-m-20 font-light text-xl tracking-tight text-center pb-4">Current Role</h3>
 		<p>
 		Test Automation Software Engineer @
 		<a
@@ -101,7 +101,7 @@
 		</p>
 	</div>
 	<div class="flex flex-col items-center pt-2 pb-8">
-		<h3 class="scroll-m-20 font-light text-xl tracking-tight text-left pb-4">Previous Roles</h3>
+		<h3 class="scroll-m-20 font-light text-xl tracking-tight text-center pb-4">Previous Roles</h3>
 		<p class="pb-2">
 		Lead Robotics Software Engineer @
 		<a
