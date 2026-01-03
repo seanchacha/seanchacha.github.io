@@ -46,7 +46,7 @@
 	<div
 	class="flex w-full {isMobile.current ? 'flex-col' : 'flex-row min-h-[70vh]'}"
 	>
-		<div class="{isMobile.current ? "pt-25" : "pt-90 min-w-100"}">
+		<div class="{isMobile.current ? "pt-10" : "pt-90 min-w-100"}">
 			<h1 class="text-2xl font-normal tracking-tight text-left">
 				Hi, I'm Sean
 			</h1>
