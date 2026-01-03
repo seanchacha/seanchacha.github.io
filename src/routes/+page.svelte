@@ -45,7 +45,7 @@
 	<div
 	class="flex {isMobile.current ? 'flex-col' : 'flex-row'}"
 	>
-		<div class="{isMobile.current ? "pt-75" : "pt-90 min-w-100"}">
+		<div class="{isMobile.current ? "pt-45" : "pt-90 min-w-100"}">
 			<h1 class="text-2xl font-normal tracking-tight text-left">
 				Hi, I'm Sean
 			</h1>
@@ -63,7 +63,7 @@
 			</h1>
 		</div>
 	</div>
-	<div class="flex justify-center w-full mb-20 mt-auto">
+	<div class="flex justify-center w-full {isMobile.current ? "mb-40" : "mb-20"} mt-auto">
 		<svg 
 			class="w-12 h-12 animate-bounce cursor-pointer focus:outline-none" 
 			viewBox="0 0 24 24" 
