@@ -83,7 +83,7 @@
 </div>
 
 <div
-  class="flex flex-col items-center justify-center min-h-50 pt-20 px-5 mx-auto"
+  class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? "pt-5" : "pt-20"} px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
 	<div class="flex flex-col items-center pt-2 pb-8">
