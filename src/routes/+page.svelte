@@ -58,38 +58,38 @@
 				{/key}
 			</div>
 		</div>
-		<div class="flex-1 [@media(min-width:1500px)]:mx-[10%] [@media(min-width:2560px)]:mx-[15%]">
+		<div class="flex-1 [@media(min-width:1500px)]:mx-[10%] [@media(min-width:2560px)]:mx-[20%]">
 			<div class="{isMobile.current ? 'pt-5' : 'pt-65'}">
 				<div class="relative w-full h-[400px] mt-8">
 					<img 
 						src="{selfie1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-1"
-						style="top: 20px; {isMobile.current ? "left: 0%;" : "left: 5%;"} animation-delay: 0s;"
+						style="top: 12px; {isMobile.current ? "left: 0%;" : "left: 5%;"} animation-delay: 0s;"
 					/>
 					<img 
 						src="{selfie1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-2"
-						style="top: 125px; left: 25%; animation-delay: 0s;"
+						style="{isMobile.current ? "top: 150px; left: 13%;" : "top: 125px; left: 25%;"} animation-delay: 0s;"
 					/>
 					<img 
 						src="{selfie1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-3"
-						style="top: 10px; left: 45%; animation-delay: 0s;"
+						style="{isMobile.current ? "top: 1px; left: 35%;" : "top: 1px; left: 45%;"} animation-delay: 0s;"
 					/>
 					<img 
 						src="{selfie1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-4"
-						style="top: 130px; left: 65%; animation-delay: 0s;"
+						style="{isMobile.current ? "top: 150px; left: 55%;" : "top: 130px; left: 65%;"} animation-delay: 0s;"
 					/>
 					<img 
 						src="{selfie1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-5"
-						style="top: 15px; left: 85%; animation-delay: 0s;"
+						style="{isMobile.current ? "top: 15px; left: 70%;" : "top: 15px; left: 85%;"} animation-delay: 0s;"
 					/>
 				</div>
 			</div>
