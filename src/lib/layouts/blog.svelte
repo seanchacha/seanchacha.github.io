@@ -7,9 +7,13 @@
   }
 
   let { title, date, author, description }: Props = $props();
+
+  import { IsMobile } from '$lib/hooks/is-mobile.svelte.ts';
+
+	const isMobile = new IsMobile();
 </script>
 
-<article class="max-w-4xl mx-auto px-4 py-8 mt-8">
+<article class="max-w-4xl mx-auto px-4 {isMobile.current ? 'pt-2' : 'pt-6'} mt-8">
   <div class="pb-4">
     <a href="/blogs" class="hover:underline">
       &lt; Go back to all posts
