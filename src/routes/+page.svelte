@@ -60,7 +60,7 @@
 		</div>
 		<div class="flex-1 [@media(min-width:1500px)]:mx-[10%] [@media(min-width:2560px)]:mx-[20%]">
 			<div class="{isMobile.current ? 'pt-5' : 'pt-65'}">
-				<div class="relative w-full h-[400px] mt-8">
+				<div class="relative w-full {isMobile.current ? 'h-[300px]' : 'h-[400px]'} mt-8">
 					<img 
 						src="{selfie1}" 
 						alt="Description"
