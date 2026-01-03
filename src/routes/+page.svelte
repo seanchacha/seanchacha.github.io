@@ -2,6 +2,10 @@
   	import { IsMobile } from '$lib/hooks/is-mobile.svelte.ts';
 	import { typewriter, messages } from '$lib/components/home_msgs.ts';
 	import selfie1 from '$lib/assets/selfie1.jpg';
+	import reggie1 from '$lib/assets/reggie1.jpg';
+	import dogs1 from '$lib/assets/dogs1.jpeg';
+	import venhub1 from '$lib/assets/venhub1.jpg';
+	import mira1 from '$lib/assets/mira1.jpg';
 
 	const isMobile = new IsMobile();
 	const desktopWidth: number = 65;
@@ -68,25 +72,25 @@
 						style="top: 12px; {isMobile.current ? "left: 1%;" : "left: 5%;"} animation-delay: 0s;"
 					/>
 					<img 
-						src="{selfie1}" 
+						src="{reggie1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-2"
 						style="{isMobile.current ? "top: 150px; left: 10%;" : "top: 125px; left: 25%;"} animation-delay: 0s;"
 					/>
 					<img 
-						src="{selfie1}" 
+						src="{mira1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-3"
 						style="{isMobile.current ? "top: 1px; left: 30%;" : "top: 1px; left: 45%;"} animation-delay: 0s;"
 					/>
 					<img 
-						src="{selfie1}" 
+						src="{dogs1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-4"
 						style="{isMobile.current ? "top: 150px; left: 50%;" : "top: 130px; left: 65%;"} animation-delay: 0s;"
 					/>
 					<img 
-						src="{selfie1}" 
+						src="{venhub1}" 
 						alt="Description"
 						class="absolute w-32 h-32 object-cover rounded-lg shadow-lg animate-float-5"
 						style="{isMobile.current ? "top: 15px; left: 60%;" : "top: 15px; left: 85%;"} animation-delay: 0s;"
