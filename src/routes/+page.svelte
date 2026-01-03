@@ -43,7 +43,7 @@
 <div class="flex flex-col min-h-screen items-start justify-start px-5 mx-auto"
 	style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};">
 	<div
-	class="flex {isMobile.current ? 'flex-col' : 'flex-row'}"
+	class="flex w-full {isMobile.current ? 'flex-col' : 'flex-row min-h-[70vh]'}"
 	>
 		<div class="{isMobile.current ? "pt-45" : "pt-90 min-w-100"}">
 			<h1 class="text-2xl font-normal tracking-tight text-left">
@@ -57,10 +57,12 @@
 				{/key}
 			</div>
 		</div>
-		<div class="{isMobile.current ? "pt-5" : "pt-65"}">
-			<h1 class="text-2xl font-normal tracking-tight text-left">
-				I be another div
-			</h1>
+		<div class="flex-grow">
+			<div class="{isMobile.current ? "pt-5" : "pt-65"}">
+				<h1 class="text-2xl font-normal tracking-tight text-left">
+					I be another div
+				</h1>
+			</div>
 		</div>
 	</div>
 	<div class="flex justify-center w-full {isMobile.current ? 'mb-50' : 'mb-20'} mt-auto">
