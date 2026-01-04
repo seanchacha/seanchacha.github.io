@@ -148,14 +148,14 @@
 			/>
 		</a>
 		<p class="text-center">
-		Test Automation Software Engineer @
+		Test Automation Software Engineer
 		<a
 			href="https://www.impulsespace.com"
 			class="underline text-inherit"
 			target="_blank"
 			rel="noopener noreferrer"
+			title="Impulse Space"
 		>
-			Impulse Space
 		</a>
 		</p>
 	</div>
@@ -175,14 +175,14 @@
 			/>
 		</a>
 		<p class="pb-5 text-center">
-		Lead Robotics Software Engineer @
+		Lead Robotics Software Engineer
 		<a
 			href="https://www.venhub.com"
 			class="underline text-inherit"
 			target="_blank"
 			rel="noopener noreferrer"
+			title="Venhub"
 		>
-			Venhub Global
 		</a>
 		</p>
 		<a
@@ -196,14 +196,14 @@
 			/>
 		</a>
 		<p class="pb-5 text-center">
-		Medical Device R&D Intern @
+		Medical Device R&D Intern
 		<a
 			href="https://www.nventric.com"
 			class="underline text-inherit"
 			target="_blank"
 			rel="noopener noreferrer"
+			title="Nventric"
 		>
-			Nventric
 		</a>
 		</p>
 		<a
@@ -217,14 +217,14 @@
 			/>
 		</a>
 		<p class="pb-5 text-center">
-		Mechanical Engineering Intern @
+		Mechanical Engineering Intern
 		<a
 			href="https://www.soeffects.com"
 			class="underline text-inherit"
 			target="_blank"
 			rel="noopener noreferrer"
+			title="Second Order Effects"
 		>
-			Second Order Effects
 		</a>
 		</p>
 	</div>
