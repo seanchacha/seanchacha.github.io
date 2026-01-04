@@ -6,9 +6,9 @@
   const isMobile = new IsMobile();
 
   const items = [
-    { label: 'phone', text: '(213) 505-0769' , href: null},
-    { label: 'email', text: 'seungwcha@gmail.com', href: null },
-    { label: 'resume', text: 'Click here', href: null }
+    { label: 'Phone', text: '(213) 505-0769' , href: null},
+    { label: 'Email', text: 'seungwcha@gmail.com', href: null },
+    { label: 'Resume', text: 'Click here', href: null }
   ];
 </script>
 

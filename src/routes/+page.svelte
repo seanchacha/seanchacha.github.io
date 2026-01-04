@@ -51,11 +51,6 @@
 			behavior: 'smooth'
 		});
 	}
-
-  const infoItems = [
-    { text: 'How I Built and Hosted this Site for Free', href: '/blogs/this-site', image: dogs1 },
-    { text: 'My Other Post', href: '/blogs/life', image: dogs1 },
-  ];
 </script>
 
 <div class="flex flex-col min-h-screen items-start justify-start px-5 mx-auto"

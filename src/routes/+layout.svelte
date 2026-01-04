@@ -5,6 +5,7 @@
   	import { ModeWatcher } from "mode-watcher";
 
 	import MyNavbar from '$lib/components/MyNavbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	import SunIcon from "@lucide/svelte/icons/sun";
 	import MoonIcon from "@lucide/svelte/icons/moon";
@@ -57,8 +58,14 @@
 </div>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-{@render children()}
+<div class="flex flex-col min-h-screen">
+	<main class="flex-1 pb-10">
+		{@render children()}
+	</main>
+	<Footer />
+</div>
 
+<!-- <Footer /> -->
 <style>
 	@keyframes wiggle {
 		0%, 100% {
