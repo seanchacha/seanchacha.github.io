@@ -124,10 +124,10 @@
 </div>
 
 <div
-  class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? '' : 'pt-20'} px-5 mx-auto"
+  class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? '' : 'pt-10'} px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
-	<div class="flex flex-col items-center pt-2 pb-8">
+	<div class="flex flex-col items-center pb-8">
 		<h3 class="scroll-m-20 font-light text-xl tracking-tight text-center pb-4">Current Role</h3>
 		<a
 			href="https://www.impulsespace.com"
@@ -136,7 +136,7 @@
 			<img 
 			src={impulse} 
 			alt="alt text"
-			class="h-8 w-auto mb-2"
+			class="h-10 w-auto mb-2"
 			/>
 		</a>
 		<p class="text-center">
@@ -151,6 +151,9 @@
 		</a>
 		</p>
 	</div>
+	<div class="w-full flex justify-center pb-8">
+		<hr class="w-1/2 border-border" />
+	</div>
 	<div class="flex flex-col items-center pt-2 pb-8">
 		<h3 class="scroll-m-20 font-light text-xl tracking-tight text-center pb-4">Previous Roles</h3>
 		<a
@@ -160,7 +163,7 @@
 			<img 
 			src={venhub} 
 			alt="alt text"
-			class="h-8 w-auto mb-2"
+			class="h-6 w-auto mb-2"
 			/>
 		</a>
 		<p class="pb-5 text-center">
@@ -181,7 +184,7 @@
 			<img 
 			src={nventric} 
 			alt="alt text"
-			class="h-8 w-auto mb-2"
+			class="h-4.5 w-auto mb-2"
 			/>
 		</a>
 		<p class="pb-5 text-center">
@@ -202,7 +205,7 @@
 			<img 
 			src={soe} 
 			alt="alt text"
-			class="h-8 w-auto mb-2"
+			class="h-5 w-auto mb-2"
 			/>
 		</a>
 		<p class="pb-5 text-center">
