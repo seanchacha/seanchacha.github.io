@@ -1,6 +1,9 @@
 <script lang="ts">
   	import { IsMobile } from '$lib/hooks/is-mobile.svelte.ts';
 	import { typewriter, messages } from '$lib/components/home_msgs.ts';
+	import AllPosts from '$lib/components/AllPosts.svelte';
+	import MyInfo from '$lib/components/MyInfo.svelte';
+
 	import selfie1 from '$lib/assets/selfie1.jpg';
 	import reggie1 from '$lib/assets/reggie1.jpg';
 	import dogs1 from '$lib/assets/dogs1.jpeg';
@@ -48,6 +51,11 @@
 			behavior: 'smooth'
 		});
 	}
+
+  const infoItems = [
+    { text: 'How I Built and Hosted this Site for Free', href: '/blogs/this-site', image: dogs1 },
+    { text: 'My Other Post', href: '/blogs/life', image: dogs1 },
+  ];
 </script>
 
 <div class="flex flex-col min-h-screen items-start justify-start px-5 mx-auto"
@@ -223,10 +231,23 @@
 </div>
 
 <div
-  class="flex flex-col items-start justify-center min-h-screen px-5 mx-auto"
+  class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? '' : 'pt-20'} px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
-  <!-- <h3 class="scroll-m-20 text-2xl tracking-tight text-left">I'M WORKING ON IT!</h3> -->
+	<h2 class="text-2xl font-normal tracking-tight text-left">
+	Contact & Resume
+	</h2>
+	<MyInfo/>
+</div>
+
+<div
+  class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? '' : 'pt-20'} px-5 mx-auto"
+  style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
+>
+	<h2 class="text-2xl font-normal tracking-tight text-left">
+	All Posts
+	</h2>
+	<AllPosts/>
 </div>
 
 <style>
