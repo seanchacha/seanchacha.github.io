@@ -22,7 +22,7 @@
           rel="noopener noreferrer"
           title="Sean resume"
           >
-          {item.label}
+          <span class="font-bold">{item.label}</span>
           <br />
           <p class="underline">{item.text}</p>
           </a>
@@ -30,7 +30,7 @@
           <div 
           class="text-center {isMobile.current ? 'w-full' : 'flex-1 min-w-[200px] max-w-10'}"
           >
-          {item.label}
+          <span class="font-bold">{item.label}</span>
           <br />
           {item.text}
           </div>
