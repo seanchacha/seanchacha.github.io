@@ -7,6 +7,11 @@
 	import venhub1 from '$lib/assets/venhub1.jpg';
 	import mira1 from '$lib/assets/mira1.jpg';
 
+	import venhub from '$lib/assets/venhub.avif';
+	import impulse from '$lib/assets/impulse.png';
+	import nventric from '$lib/assets/nventric.png';
+	import soe from '$lib/assets/soe.svg';
+
 	const isMobile = new IsMobile();
 	const desktopWidth: number = 65;
 	const mobileWidth: number = 97;
@@ -124,6 +129,16 @@
 >
 	<div class="flex flex-col items-center pt-2 pb-8">
 		<h3 class="scroll-m-20 font-light text-xl tracking-tight text-center pb-4">Current Role</h3>
+		<a
+			href="https://www.impulsespace.com"
+			class="hover:bg-accent hover:text-accent-foreground transition-colors inline-block"
+		>
+			<img 
+			src={impulse} 
+			alt="alt text"
+			class="h-8 w-auto mb-2"
+			/>
+		</a>
 		<p class="text-center">
 		Test Automation Software Engineer @
 		<a
@@ -138,7 +153,17 @@
 	</div>
 	<div class="flex flex-col items-center pt-2 pb-8">
 		<h3 class="scroll-m-20 font-light text-xl tracking-tight text-center pb-4">Previous Roles</h3>
-		<p class="pb-2 text-center">
+		<a
+			href="https://www.venhub.com"
+			class="hover:bg-accent hover:text-accent-foreground transition-colors inline-block"
+		>
+			<img 
+			src={venhub} 
+			alt="alt text"
+			class="h-8 w-auto mb-2"
+			/>
+		</a>
+		<p class="pb-5 text-center">
 		Lead Robotics Software Engineer @
 		<a
 			href="https://www.venhub.com"
@@ -149,7 +174,17 @@
 			Venhub Global
 		</a>
 		</p>
-		<p class="pb-2 text-center">
+		<a
+			href="https://www.nventric.com"
+			class="hover:bg-accent hover:text-accent-foreground transition-colors inline-block"
+		>
+			<img 
+			src={nventric} 
+			alt="alt text"
+			class="h-8 w-auto mb-2"
+			/>
+		</a>
+		<p class="pb-5 text-center">
 		Medical Device R&D Intern @
 		<a
 			href="https://www.nventric.com"
@@ -160,7 +195,17 @@
 			Nventric
 		</a>
 		</p>
-		<p class="pb-2 text-center">
+		<a
+			href="https://www.soeffects.com"
+			class="hover:bg-accent hover:text-accent-foreground transition-colors inline-block"
+		>
+			<img 
+			src={soe} 
+			alt="alt text"
+			class="h-8 w-auto mb-2"
+			/>
+		</a>
+		<p class="pb-5 text-center">
 		Mechanical Engineering Intern @
 		<a
 			href="https://www.soeffects.com"
