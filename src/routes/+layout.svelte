@@ -86,4 +86,8 @@
 	.group:hover .favicon-wiggle {
 		animation: wiggle 0.5s ease-in-out;
 	}
+
+	:global(html) {
+		scroll-behavior: smooth;
+	}
 </style>

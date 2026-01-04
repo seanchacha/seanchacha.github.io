@@ -15,11 +15,14 @@
             <img src={favicon} alt="Home — sean cha" class="h-8 w-8 object-contain favicon-wiggle" />
         </a>
         <div class="flex flex-col px-4">
-            <a class="pb-1 hover:underline" href="/" aria-label="Home">
+            <a class="pb-0.5 hover:underline" href="/" aria-label="Home">
                 Home
             </a>
-            <a class="pt-1 hover:underline" href="/blogs" aria-label="Blogs">
+            <a class="py-0.5 hover:underline" href="/blogs" aria-label="Blogs">
                 Blogs
+            </a>
+            <a class="pt-0.5 hover:underline" href="/#contact-resume" aria-label="Contact">
+                Contact
             </a>
         </div>
     </div>

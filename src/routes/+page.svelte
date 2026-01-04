@@ -226,6 +226,7 @@
 </div>
 
 <div
+  id="contact-resume"
   class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? 'pt-30' : 'pt-40'} px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
