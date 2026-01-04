@@ -231,7 +231,7 @@
 </div>
 
 <div
-  class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? '' : 'pt-20'} px-5 mx-auto"
+  class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? 'pt-30' : 'pt-40'} px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
 	<h2 class="text-2xl font-normal tracking-tight text-left">
@@ -241,7 +241,7 @@
 </div>
 
 <div
-  class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? '' : 'pt-20'} px-5 mx-auto"
+  class="flex flex-col items-center justify-center min-h-50 {isMobile.current ? 'pt-30' : 'pt-40'} px-5 mx-auto"
   style="max-width: {isMobile.current ? mobileWidth + '%' : desktopWidth + '%'};"
 >
 	<h2 class="text-2xl font-normal tracking-tight text-left">
