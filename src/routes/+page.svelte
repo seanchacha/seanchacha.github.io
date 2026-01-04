@@ -135,6 +135,9 @@
 		<a
 			href="https://www.impulsespace.com"
 			class="hover:bg-accent hover:text-accent-foreground transition-colors inline-block"
+			target="_blank"
+			rel="noopener noreferrer"
+			title="Impulse Space"
 		>
 			<img 
 			src={impulse} 
@@ -144,14 +147,6 @@
 		</a>
 		<p class="text-center">
 		Test Automation Software Engineer
-		<a
-			href="https://www.impulsespace.com"
-			class="underline text-inherit"
-			target="_blank"
-			rel="noopener noreferrer"
-			title="Impulse Space"
-		>
-		</a>
 		</p>
 	</div>
 	<div class="w-full flex justify-center pb-8">
@@ -162,6 +157,9 @@
 		<a
 			href="https://www.venhub.com"
 			class="hover:bg-accent hover:text-accent-foreground transition-colors inline-block"
+			target="_blank"
+			rel="noopener noreferrer"
+			title="Venhub"
 		>
 			<img 
 			src={venhub} 
@@ -171,18 +169,13 @@
 		</a>
 		<p class="pb-5 text-center">
 		Lead Robotics Software Engineer
-		<a
-			href="https://www.venhub.com"
-			class="underline text-inherit"
-			target="_blank"
-			rel="noopener noreferrer"
-			title="Venhub"
-		>
-		</a>
 		</p>
 		<a
 			href="https://www.nventric.com"
 			class="hover:bg-accent hover:text-accent-foreground transition-colors inline-block"
+			target="_blank"
+			rel="noopener noreferrer"
+			title="Nventric"
 		>
 			<img 
 			src={nventric} 
@@ -192,18 +185,13 @@
 		</a>
 		<p class="pb-5 text-center">
 		Medical Device R&D Intern
-		<a
-			href="https://www.nventric.com"
-			class="underline text-inherit"
-			target="_blank"
-			rel="noopener noreferrer"
-			title="Nventric"
-		>
-		</a>
 		</p>
 		<a
 			href="https://www.soeffects.com"
 			class="hover:bg-accent hover:text-accent-foreground transition-colors inline-block"
+			target="_blank"
+			rel="noopener noreferrer"
+			title="Second Order Effects"
 		>
 			<img 
 			src={soe} 
@@ -213,14 +201,6 @@
 		</a>
 		<p class="pb-5 text-center">
 		Mechanical Engineering Intern
-		<a
-			href="https://www.soeffects.com"
-			class="underline text-inherit"
-			target="_blank"
-			rel="noopener noreferrer"
-			title="Second Order Effects"
-		>
-		</a>
 		</p>
 	</div>
 </div>
