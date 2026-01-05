@@ -49,3 +49,29 @@ UI Framework that lets you create "reactive" components using CSS, and a superse
 > **reactive** basically referring to when UI components update themselves automatically when any of their
 dependent data gets updated
 
+What do I mean by 'superset of HTML and Javascript'? Well, the HTML and JS that you write in a Svelte project has
+additional Svelte-specific features that is made possible by the fact that Svelte is a compiler.
+
+The code that you write gets compiled into vanilla/plain JS by the Svelte compiler to be directly run in the browser. Therefore, while something like React uses a Virtual DOM engine in order to enable fast reactivity, Svelte embeds this reactivity into the Javascript that it compiles so that it doesn't have to bundle libraries with your code in order for it to work on the browser.
+
+It also means that Svelte can add basically any arbitrary syntax rules (whether for good or bad) to its code.
+
+For example, logic blocks in your HTML directly:
+
+```html
+{#if condition}
+{:else if other}
+{:else}
+{/if}
+```
+
+...two-way reactivity:
+```svelte
+<script>
+  let name = $state('');
+</script>
+
+<input bind:value={name}>
+```
+..and a lot more other things that you can read [here](https://svelte.dev/docs/svelte/overview)
+
