@@ -91,3 +91,7 @@ Read more about it [here](https://svelte.dev/docs/kit/introduction).
 ### Tailwind CSS
 
 ### Shadcn-Svelte
+
+## Building the Site
+
+## Hosting the Site
