@@ -36,9 +36,9 @@ This website is the result of my decision
 ## Web-dev Frameworks and Tools Used
 
 - [Svelte](https://svelte.dev/docs/svelte/overview) and [SvelteKit](https://svelte.dev/docs/kit/introduction)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Shadcn-svelte](https://www.shadcn-svelte.com/)
 - [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Shadcn-Svelte](https://www.shadcn-svelte.com/)
 
 ## "[Wah eh](https://www.tiktok.com/@dayrose11/video/7550469363690671391)" All This?
 I will only give a very brief description of each of these things since their respective docs pages
@@ -75,3 +75,19 @@ For example, logic blocks in your HTML directly:
 ```
 ..and a lot more other things that you can read [here](https://svelte.dev/docs/svelte/overview)
 
+### SvelteKit
+Svelte only is in charge of rendering UI compopnents.
+SvelteKit is all the extra tools you need on top of Svelte to build a full app.
+
+In the case of this website, this includes:
+- Project management and dev tools (SvelteKit wraps around [Vite](https://vite.dev/))
+- [Routing](https://svelte.dev/docs/kit/routing)
+- Client vs Server Side Rendering configuration (see [here](https://svelte.dev/docs/kit/project-types))
+
+Read more about it [here](https://svelte.dev/docs/kit/introduction).
+
+### Github Pages
+
+### Tailwind CSS
+
+### Shadcn-Svelte
