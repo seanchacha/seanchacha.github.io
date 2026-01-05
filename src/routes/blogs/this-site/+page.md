@@ -21,7 +21,7 @@ published: true
 As an engineer who is yet another cog in the machine at the mercy of employeers and recruiters,
 I wanted to make a website that served as my personal portfolio--something more visual and engaging than my resume pdf.
 
-But I didn't know anything about frontend and web design, so my best solution was to use a [Squarespace](https://www.squarespace.com) website.
+But I didn't know anything about frontend and web design (still don't, really), so my best solution was to use a [Squarespace](https://www.squarespace.com) website.
 
 The problem is that this was $25/month for building the website drag-and-drop style and hosting it.  
 Easy but more than I was willing to pay.
