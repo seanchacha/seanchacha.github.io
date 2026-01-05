@@ -19,7 +19,7 @@ published: true
 ## Motivation
 
 As an engineer who is yet another cog in the machine at the mercy of employeers and recruiters,
-I wanted to make a website that served as my personal portfolio--something visual and engaging than my resume pdf.
+I wanted to make a website that served as my personal portfolio--something more visual and engaging than my resume pdf.
 
 But I didn't know anything about frontend and web design, so my best solution was to use a [Squarespace](https://www.squarespace.com) website.
 
