@@ -27,7 +27,8 @@ The problem is that this was $25/month for building the website drag-and-drop st
 Easy but more than I was willing to pay.
 
 So I bit the bullet and learned the **minimum** amount of HTML and CSS that I needed to make a basic portfolio website that I could host using [Github Pages](https://docs.github.com/en/pages).  
-But it looked a little too basic and I had trouble making everything mobile-friendly.
+But it looked a little too basic and I had trouble making everything mobile-friendly, which I know is more of a skill issue than a framework issue, but still,
+I wanted something better.
 
 So theeeen I looked to javascript/web-dev frameworks like React, Vue, Angular, Svelte...etc, and I tried React and Svelte tutorials and decided that Svelte seemed a *bit* more intuitive to me.
 This website is the result of my decision  
@@ -39,11 +40,11 @@ This website is the result of my decision
 - [Shadcn-svelte](https://www.shadcn-svelte.com/)
 - [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 
-## "Wah eh" All This? ([see](https://www.tiktok.com/@dayrose11/video/7550469363690671391))
+## "[Wah eh](https://www.tiktok.com/@dayrose11/video/7550469363690671391)" All This?
 I will only give a very brief description of each of these things since their respective docs pages
 do a better job at the more detailed explanations.
 ### Svelte
-UI Framework that lets you create "reactive" components using CSS, and a superset of HTML and CSS
+UI Framework that lets you create "reactive" components using CSS, and a superset of HTML and JavaScript
 
 > **reactive** basically referring to when UI components update themselves automatically when any of their
 dependent data gets updated
