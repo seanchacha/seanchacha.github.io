@@ -9,8 +9,17 @@
   let { title, date, author, description }: Props = $props();
 
   import { IsMobile } from '$lib/hooks/is-mobile.svelte.ts';
+  import { onMount } from 'svelte';
 
 	const isMobile = new IsMobile();
+  onMount(() => {
+    // Add target="_blank" and rel="noopener noreferrer" to all links in prose content
+    const proseLinks = document.querySelectorAll('.prose a');
+    proseLinks.forEach((link) => {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    });
+  });
 </script>
 
 <article class="max-w-4xl mx-auto px-4 {isMobile.current ? '' : 'pt-6'} mt-8">
@@ -28,7 +37,7 @@
       {/if}
     </p>
   {#if description}
-  <p class="pt-10 pb-10">{description}</p>
+  <p class="pt-4 pb-10">{description}</p>
   {/if}
   </header>
 
@@ -103,13 +112,13 @@
 
   .prose :global(ul),
   .prose :global(ol) {
+    list-style-type: disc; /* Add this */
     margin-bottom: 1.25rem;
     padding-left: 2rem;
   }
 
-  .prose :global(li) {
-    margin-bottom: 0.5rem;
-    line-height: 1.7;
+  .prose :global(ol) {
+    list-style-type: decimal; /* Add this for ordered lists */
   }
 
   .prose :global(img) {
