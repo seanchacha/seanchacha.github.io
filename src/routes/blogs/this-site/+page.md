@@ -73,7 +73,7 @@ For example, logic blocks in your HTML directly:
 
 <input bind:value={name}>
 ```
-..and a lot more other things that you can read [here](https://svelte.dev/docs/svelte/overview)
+..and a lot more other things that you can read about [here](https://svelte.dev/docs/svelte/overview)
 
 ### SvelteKit
 Svelte only is in charge of rendering UI compopnents.
