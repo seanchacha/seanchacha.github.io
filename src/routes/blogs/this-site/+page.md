@@ -16,6 +16,9 @@ published: true
 
 ![svelte machine cover photo]({svelteMachine})
 
+## Disclaimer
+This isn't a comprehensive step-by-step tutorial on how to fully replicate my site--at least not yet. Rather, this is to show and explain the tech stack with the side-benefit of showing that I didn't vibe-code *absolutely* all of it ;)
+
 ## Motivation
 
 As an engineer who is yet another cog in the machine at the mercy of employeers and recruiters,
@@ -129,5 +132,11 @@ From [Svelte themselves](https://svelte.dev/docs/cli/mdsvex):
 See mdsvex's [site](https://mdsvex.pngwn.io/)
 
 ## Building the Site
+
+You can create a Svelte project using SvelteKit or Vite by itself. I chose SvelteKit:
+
+`npx sv create <project-name>`
+
+
 
 ## Hosting the Site

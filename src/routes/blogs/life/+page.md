@@ -1,58 +1,16 @@
 ---
 layout: blog
-title: Second post
+title: My Second Post Placeholder
 author: Sean Cha
-description: First post.
-date: '2026-01-01'
+description: Description placeholder :D
+date: 'created: 2026-01-01 | last updated: 2026-01-05'
 categories:
   - sveltekit
   - svelte
 published: true
 ---
 
-## Markdown
+## Uhhhh hi.
 
-post #2! 👋  
-hello  
-hello  
-hello  
-hello  
-hello  
-hello  
-hello  
-hello  
-hello  
-
-
-
-
-hello  
-hello  
-hello  
-hello  
-hello  
-hello  
-
-
-
-hello  
-hello  
-hello  
-hello  
-hello  
-
-hello  
-hello  
-hello  
-hello  
-hello  
-
-hello  
-hello  
-
-hello  
-hello  
-hello  
-
-hello  hello  
+Nothing to see here yet...
 
