@@ -103,18 +103,6 @@ Github Pages hosting is free, but it supports static pages only, meaning that th
 
 In basic terms, this means custom server functions are not allowed, e.g. Node.js/Python/Ruby/PHP server, database queries, API routes that run on the server, and server-side rendering.
 
-To use Github Pages, you must [enable it in the repo settings](https://docs.github.com/en/pages/quickstart)
-
-By default, each Github user and organization page is allocated:
-
-`http(s)://<owner>.github.io`  
-
-And for each repo:
-
-`http(s)://<owner>.github.io/<repositoryname>`
-
-If you want to use a custom domain name like I did, buy a domain from a provider ([Cloudfare](https://www.cloudflare.com/learning/dns/how-to-buy-a-domain-name/), [Namecheap](https://www.namecheap.com/domains/domain-name-search/), [Squarespace](https://domains.squarespace.com/), etc) and then [configure it on Github](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain)
-
 ### Tailwind CSS
 Tailwind CSS is a popular CSS toolkit that comes with many combinable built-in utility classes that removes the need for a lot of CSS that you'd need to otherwise write yourself.
 
@@ -131,8 +119,6 @@ From [Svelte themselves](https://svelte.dev/docs/cli/mdsvex):
 
 See mdsvex's [site](https://mdsvex.pngwn.io/)
 
-## [UNDER CONSTRUCTION HERE ON DOWN]
-
 ## Project Setup
 
 First, you need Node.
@@ -141,6 +127,10 @@ I use [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm)
 To use the same exact node version as me:  
 `nvm install 25.2.1`  
 `nvm use 25.2.1`
+
+or just:  
+`nvm install node`  
+`nvm use node`
 
 You can create a Svelte project using SvelteKit or Vite by itself. I chose SvelteKit:  
 `npx sv create <project-name>`
@@ -153,11 +143,92 @@ When prompted, select:
 - `static` for sveltekit-adapter  
 - `npm` for package manager  
 
+Your selection may differ depending on your needs
+
 Now code away!
 
 [Svelte tutorial](https://svelte.dev/tutorial/svelte/welcome-to-svelte) :D
 
+You can see a live preview of your website by running:  
+`npm install`  
+`npm run dev`
 
+Compile and build by running:  
+`npm run build`  
 
+To preview the build:  
+`npm run preview`
 
 ## Hosting the Site
+
+Now, get your website on the internet!
+
+To use Github Pages, you must [enable it in the repo settings](https://docs.github.com/en/pages/quickstart)
+
+By default, each Github user and organization page is allocated:  
+`http(s)://<owner>.github.io`  
+
+And for each repo:  
+`http(s)://<owner>.github.io/<repositoryname>`
+
+There are two ways for Github to find your website:  
+You can [target a branch](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch) to build and optionally a folder within that branch.  
+Or you can [use Github Actions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow) to define a custom build steps
+
+In my case, I used the second option, with my `.github/workflows/deploy.yml` looking like:
+
+```yaml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  build_site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 25
+          cache: npm
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: build
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
+        run: npm run build
+
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'build/'
+
+  deploy:
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+This way, Github will be able to run `npm install` and `npm build` for me and deploy from what is inside the `build` folder.
+
+Now, if you want to use a custom domain name like I did, buy a domain from a provider ([Cloudfare](https://www.cloudflare.com/learning/dns/how-to-buy-a-domain-name/), [Namecheap](https://www.namecheap.com/domains/domain-name-search/), [Squarespace](https://domains.squarespace.com/), etc) and then [configure it on Github](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain)
+
+And finally, I present: [seancha.com](https://seancha.com)
