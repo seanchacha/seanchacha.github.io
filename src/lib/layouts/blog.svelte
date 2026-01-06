@@ -137,15 +137,16 @@
   }
 
   .prose :global(code) {
-    background: #f4f4f4;
+    background: var(--muted);  /* Use your theme color */
     padding: 0.2rem 0.4rem;
     border-radius: 0.25rem;
     font-size: 0.9em;
     font-family: 'Courier New', monospace;
-    word-wrap: break-word;        /* Add this */
-    word-break: break-all;        /* Add this */
-    overflow-wrap: break-word;    /* Add this */
-    white-space: pre-wrap;        /* Add this */
+    color: inherit;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
   }
 
   .prose :global(pre) {
