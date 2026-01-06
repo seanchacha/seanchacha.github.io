@@ -142,6 +142,10 @@
     border-radius: 0.25rem;
     font-size: 0.9em;
     font-family: 'Courier New', monospace;
+    word-wrap: break-word;        /* Add this */
+    word-break: break-all;        /* Add this */
+    overflow-wrap: break-word;    /* Add this */
+    white-space: pre-wrap;        /* Add this */
   }
 
   .prose :global(pre) {
