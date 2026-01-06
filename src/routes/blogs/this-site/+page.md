@@ -131,11 +131,32 @@ From [Svelte themselves](https://svelte.dev/docs/cli/mdsvex):
 
 See mdsvex's [site](https://mdsvex.pngwn.io/)
 
-## Building the Site
+## [UNDER CONSTRUCTION HERE ON DOWN]
 
-You can create a Svelte project using SvelteKit or Vite by itself. I chose SvelteKit:
+## Project Setup
 
+First, you need Node.
+I use [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm)
+
+To use the same exact node version as me:  
+`nvm install 25.2.1`  
+`nvm use 25.2.1`
+
+You can create a Svelte project using SvelteKit or Vite by itself. I chose SvelteKit:  
 `npx sv create <project-name>`
+
+When prompted, select:  
+- `SvelteKit minimal`  
+- `type checking` enable/disable depending on preference  
+- `tailwindcss`, `sveltekit-adapter`, `mdsvex`, and formatter & linter config of your choice  
+- `typography` for tailwindcss addition  
+- `static` for sveltekit-adapter  
+- `npm` for package manager  
+
+Now code away!
+
+[Svelte tutorial](https://svelte.dev/tutorial/svelte/welcome-to-svelte) :D
+
 
 
 
