@@ -173,7 +173,7 @@ And for each repo:
 
 There are two ways for Github to find your website:  
 You can [target a branch](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch) to build and optionally a folder within that branch.  
-Or you can [use Github Actions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow) to define custom build steps
+Or you can [use Github Actions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow) to define custom build steps.
 
 In my case, I used the second option, with my `.github/workflows/deploy.yml` looking like:
 
