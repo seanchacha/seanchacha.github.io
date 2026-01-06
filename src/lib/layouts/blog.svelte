@@ -4,16 +4,16 @@
     date: string;
     author?: string;
     description?: string;
+    children?: import('svelte').Snippet;  // Add this
   }
 
-  let { title, date, author, description }: Props = $props();
+  let { title, date, author, description, children }: Props = $props();
 
   import { IsMobile } from '$lib/hooks/is-mobile.svelte.ts';
   import { onMount } from 'svelte';
 
-	const isMobile = new IsMobile();
+  const isMobile = new IsMobile();
   onMount(() => {
-    // Add target="_blank" and rel="noopener noreferrer" to all links in prose content
     const proseLinks = document.querySelectorAll('.prose a');
     proseLinks.forEach((link) => {
       link.setAttribute('target', '_blank');
@@ -36,13 +36,13 @@
         <span class="ml-4">by {author}</span>
       {/if}
     </p>
-  {#if description}
-  <p class="pt-4 pb-10">{description}</p>
-  {/if}
+    {#if description}
+      <p class="pt-4 pb-10">{description}</p>
+    {/if}
   </header>
 
   <div class="prose prose-lg max-w-none">
-    <slot />
+    {@render children?.()}
   </div>
 </article>
 
@@ -129,11 +129,14 @@
   }
 
   .prose :global(blockquote) {
-    border-left: 4px solid #e5e5e5;
+    border-left: 4px solid var(--border);  /* Use theme border */
     padding-left: 1.5rem;
     margin: 1.5rem 0;
     font-style: italic;
-    color: #555;
+    color: var(--muted-foreground);  /* Use theme muted color */
+    background: var(--muted);  /* Optional: add subtle background */
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
   }
 
   .prose :global(code) {

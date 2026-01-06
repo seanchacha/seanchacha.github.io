@@ -14,3 +14,5 @@ published: true
 
 Nothing to see here yet...
 
+But since you're here, might as well check out my first blog on [how I made this website](https://seancha.com/blogs/this-site)
+
