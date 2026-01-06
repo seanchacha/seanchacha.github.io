@@ -62,7 +62,7 @@ It also means that Svelte can basically add any arbitrary syntax rules (whether 
 
 For example, you can have logic blocks in your HTML directly:
 
-```html
+```svelte
 {#if condition}
 {:else if other}
 {:else}
