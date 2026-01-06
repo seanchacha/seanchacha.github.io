@@ -140,7 +140,7 @@
   }
 
   .prose :global(code) {
-    background: var(--muted);  /* Use your theme color */
+    background: var(--muted);
     padding: 0.2rem 0.4rem;
     border-radius: 0.25rem;
     font-size: 0.9em;
@@ -152,12 +152,13 @@
     white-space: pre-wrap;
   }
 
+  /* Code blocks - horizontal scroll */
   .prose :global(pre) {
     background: #1e1e1e;
     color: #d4d4d4;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    overflow-x: auto;
+    overflow-x: auto;  /* Horizontal scroll */
     margin: 1.5rem 0;
   }
 
@@ -165,6 +166,10 @@
     background: transparent;
     padding: 0;
     color: inherit;
+    white-space: pre;  /* Don't wrap - keep original formatting */
+    word-wrap: normal;  /* Override inline code wrapping */
+    word-break: normal;
+    overflow-wrap: normal;
   }
 
   .prose :global(hr) {
