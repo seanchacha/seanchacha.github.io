@@ -117,7 +117,7 @@ A popular CSS toolkit that comes with many combinable built-in utility classes t
 It is also what is used by Shadcn (see next section)
 
 ### Shadcn-Svelte
-[Shadcn](https://ui.shadcn.com/) is a web UI component library (they say it's not a component library, and rather--I guess--a component code library but whatever) that is open-source, open-code.
+[Shadcn](https://ui.shadcn.com/) is a web UI component library (they say it's not a component library, and rather--I guess--a component *code* library but whatever) that is open-source, open-code.
 
 [Shadcn-*Svelte*](https://www.shadcn-svelte.com/) is an official-ish port of Shadcn specifically made for Svelte.
 
