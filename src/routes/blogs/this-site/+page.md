@@ -31,7 +31,7 @@ But it looked a little too basic and I had trouble making everything mobile-frie
 I wanted something better.
 
 So theeeen I looked to javascript/web-dev frameworks like React, Vue, Angular, Svelte...etc, and I tried React and Svelte tutorials and decided that Svelte seemed a *bit* more intuitive to me.
-This website is the result of my decision  
+This website is the result of that decision.  
 
 ## Web-dev Frameworks and Tools Used
 
@@ -39,6 +39,7 @@ This website is the result of my decision
 - [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Shadcn-Svelte](https://www.shadcn-svelte.com/)
+- [mdsvex](https://mdsvex.pngwn.io/)
 
 ## "[Wah eh](https://www.tiktok.com/@dayrose11/video/7550469363690671391)" All This?
 I will only give a very brief description of each of these things since their respective docs pages
@@ -52,11 +53,11 @@ dependent data gets updated
 What do I mean by 'superset of HTML and Javascript'? Well, the HTML and JS that you write in a Svelte project has
 additional Svelte-specific features that is made possible by the fact that Svelte is a compiler.
 
-The code that you write gets compiled into vanilla/plain JS by the Svelte compiler to be directly run in the browser. Therefore, while something like React uses a Virtual DOM engine in order to enable fast reactivity, Svelte embeds this reactivity into the Javascript that it compiles so that it doesn't have to bundle libraries with your code in order for it to work on the browser.
+The code that you write gets compiled into vanilla/plain JS by the Svelte compiler to be directly run in the browser. Therefore, while something like React uses a Virtual DOM engine in order to enable fast reactivity, Svelte embeds this reactivity into the Javascript that it compiles so that it doesn't have to bundle reactivity libraries with your code in order for it to work on the browser.
 
-It also means that Svelte can add basically any arbitrary syntax rules (whether for good or bad) to its code.
+It also means that Svelte can basically add any arbitrary syntax rules (whether for good or bad) to its code.
 
-For example, logic blocks in your HTML directly:
+For example, you can have logic blocks in your HTML directly:
 
 ```html
 {#if condition}
@@ -65,7 +66,7 @@ For example, logic blocks in your HTML directly:
 {/if}
 ```
 
-...two-way reactivity:
+...and two-way reactivity:
 ```svelte
 <script>
   let name = $state('');
@@ -76,13 +77,13 @@ For example, logic blocks in your HTML directly:
 ...and a lot more other things that you can read about [here](https://svelte.dev/docs/svelte/overview)
 
 ### SvelteKit
-Svelte only is in charge of rendering UI compopnents.
-SvelteKit is all the extra tools you need on top of Svelte to build a full app.
+Svelte is only in charge of rendering UI compopnents.
+Svelte*Kit* has all the extra tools you need on top of Svelte to build a full app.
 
 In the case of this website, this includes:
 - Project management and dev tools (SvelteKit wraps around [Vite](https://vite.dev/))
 - [Routing](https://svelte.dev/docs/kit/routing)
-- Client vs Server Side Rendering configuration (see [here](https://svelte.dev/docs/kit/project-types))
+- Client, Server Side, and Static Rendering configuration (see [here](https://svelte.dev/docs/kit/project-types))
 
 Read more about it [here](https://svelte.dev/docs/kit/introduction).
 
@@ -91,13 +92,13 @@ Read more about it [here](https://svelte.dev/docs/kit/introduction).
 [Github's own page](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) explains it best:
 > **GitHub Pages** is a **static site hosting service** that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.
 
-In SvelteKit, this corresponds to using their static rendering adapter, [adapter-static](https://svelte.dev/docs/kit/project-types#Static-site-generation)
+In SvelteKit, this corresponds to using their static rendering adapter, [adapter-static](https://svelte.dev/docs/kit/project-types#Static-site-generation).
 
-Github Pages hosting is free, but it supports static pages only, meaning that the server needs to be able to render your page at build-time before it reaches your user, with optionally having the client (**not** the server) finish the rendering upon client request using the javascript that the server sends
+Github Pages hosting is free, but it supports static pages only, meaning that the server needs to be able to render your page at build-time before it reaches your user, with optionally having the client (**not** the server) finish the rendering and [hydration](https://en.wikipedia.org/wiki/Hydration_(web_development)) upon client request using the javascript that the server sends
 
-> **NOTE**: This is not to be confused with server-side rendering, which can newly render UI as the client requests it. This is PRE-rendering, where the UI is already rendered BEFORE the client requests it.
+> **NOTE**: This is not to be confused with server-side rendering, which can newly render UI as the client requests it. This is **pre**-rendering, where the UI is already rendered BEFORE the client requests it.
 
-In basic terms, this means custom server functions are not allowed, e.g. Node.js runtime, Python/Ruby/PHP server, database queries, API routes that run on the server, server-side rendering.
+In basic terms, this means custom server functions are not allowed, e.g. Node.js/Python/Ruby/PHP server, database queries, API routes that run on the server, and server-side rendering.
 
 To use Github Pages, you must [enable it in the repo settings](https://docs.github.com/en/pages/quickstart)
 
@@ -112,7 +113,7 @@ And for each repo:
 If you want to use a custom domain name like I did, buy a domain from a provider ([Cloudfare](https://www.cloudflare.com/learning/dns/how-to-buy-a-domain-name/), [Namecheap](https://www.namecheap.com/domains/domain-name-search/), [Squarespace](https://domains.squarespace.com/), etc) and then [configure it on Github](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain)
 
 ### Tailwind CSS
-A popular CSS toolkit that comes with many combinable built-in utility classes that removes the need for a lot of CSS that you'd need to otherwise write yourself.
+Tailwind CSS is a popular CSS toolkit that comes with many combinable built-in utility classes that removes the need for a lot of CSS that you'd need to otherwise write yourself.
 
 It is also what is used by Shadcn (see next section)
 
@@ -120,6 +121,12 @@ It is also what is used by Shadcn (see next section)
 [Shadcn](https://ui.shadcn.com/) is a web UI component library (they say it's not a component library, and rather--I guess--a component *code* library but whatever) that is open-source, open-code.
 
 [Shadcn-*Svelte*](https://www.shadcn-svelte.com/) is an official-ish port of Shadcn specifically made for Svelte.
+
+### mdsvex
+From [Svelte themselves](https://svelte.dev/docs/cli/mdsvex):
+> mdsvex is a markdown preprocessor for Svelte components - basically MDX for Svelte. It allows you to use Svelte components in your markdown, or markdown in your Svelte components.
+
+See mdsvex's [site](https://mdsvex.pngwn.io/)
 
 ## Building the Site
 
